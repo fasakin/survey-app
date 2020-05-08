@@ -5,7 +5,7 @@ require("./services/passport");
 require('./models/user')
 
 
-mongoose.connect(keys.mongoURI, { dbName: 'probatedb'})
+mongoose.connect(keys.mongoURI)
 const app = express();
 
 require("./routes/authRoutes")(app);
